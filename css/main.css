@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  --main-bg-color: hsl(217, 54%, 11%);
+  --card-bg-color: hsl(216, 50%, 16%);
+  --line-color: hsl(215, 32%, 27%);
+  --white-color: hsl(0, 0%, 100%);
+
+}
+
+body {
+  font-family: 'outfit', sans-serif;
+  font-size: 18px;
+  background-color: var(--main-bg-color);
+}
+
+#container {
+  background-color: var(--card-bg-color);
+  width: 350px;
+  height: 596px;
+  margin: 152px auto;
+  border-radius: 15px;
+}
+
+.nft-img {
+  width: 302px;
+  height: 302px;
+  padding: 24px;
+  position: relative;
+}
+
+.nft-img img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+}
+
+.view {
+  position: absolute;
+  margin-top: -305px;
+  margin-left: 24px;
+  left: 0;
+  background-color: hsl(178, 100%, 50%, 60%);
+  width: 302px;
+  height: 302px;
+  border-radius: 8px;
+  opacity: 0;
+}
+
+.view div {
+  position: absolute;
+  top: 136px;
+  left: 129px;
+}
+
+.view:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* Flex Boxes */
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
+.price {
+  width: 302px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 24px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #2E405A;
+}
+
+.price div {
+  display: flex;
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  margin: 16px 0 39px 24px;
+}
+
+/* Styling */
+#container h2 {
+  width: 302px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-left: 24px;
+}
+
+#container a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+#container a:hover {
+  color: #00FFF8;
+}
+
+#container > p {
+  width: 302px;
+  font-size: 18px;
+  line-height: 26px;
+  line-height: 115%;
+  font-weight: 300;
+  color: #8BACD9;
+  margin: 24px;
+}
+
+.price .etherium {
+  font-size: 16px;
+  line-height: 20px;
+  line-height: 100%;
+  font-weight: 600;
+  color: #00FFF8;
+}
+
+.etherium p {
+  margin-left: 6.5px;
+}
+
+.price .days-left {
+  font-size: 16px;
+  line-height: 20px;
+  line-height: 100%;
+  font-weight: 400;
+  color: #8BACD9;
+  
+}
+
+.days-left p {
+  width: 74px;
+  margin-left: 6.5px;
+}
+
+.creator div {
+  width: 33px;
+}
+
+.creator img {
+  width: 100%;
+}
+
+.creator p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #8BACD9;
+  margin-left: 16px;
+}
+
+.creator .white-letter {
+  color: var(--white-color);
+}
+
