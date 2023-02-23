@@ -27,6 +27,9 @@ body {
   height: 302px;
   padding: 24px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nft-img img {
@@ -37,19 +40,18 @@ body {
 
 .view {
   position: absolute;
-  top: 24px;
-  left: 24px;
   background-color: hsl(178, 100%, 50%, 60%);
   width: 302px;
   height: 302px;
   border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0;
 }
 
 .view div {
   position: absolute;
-  top: 136px;
-  left: 129px;
 }
 
 .view:hover {
